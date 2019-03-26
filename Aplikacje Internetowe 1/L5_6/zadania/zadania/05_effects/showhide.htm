@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Showing and Hiding an Element</title>
+    <script type="text/javascript"  src="jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#show").click(function() {
+                $("#theDiv").show("normal");
+            });
+            $("#hide").click(function() {
+                $("#theDiv").hide("normal");
+            });
+            $("#toggle").click(function() {
+                $("#theDiv").toggle("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        div#theDiv {
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            padding: 20px;
+            background: blue;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        p, span {
+            font-size: 16pt;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Showing and Hiding an Element</p>
+    <div id="theDiv">
+    </div>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="toggle">Toggle</button>
+</body>
+</html>

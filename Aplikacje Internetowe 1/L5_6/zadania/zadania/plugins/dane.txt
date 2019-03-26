@@ -1,0 +1,18 @@
+Rzeka|Długość<br />w km|Powierzchnia dorzecza<br />w km<sup>2</sup>
+Nil|6671|2870
+Missisipi (od źródeł Missouri)|6418|3275
+Amazonka (z Maranon)|6400|7180
+Jangcy|5701|1726
+Ob (z Irtyszem)|5410|2975
+Parana|4700|3100
+Huang-ho|4670|531
+Kongo (z Lualabą)|4650|3690
+Mekong|4500|810
+Amur (z Szyłką i Ononem)|4416|1855
+Lena|4400|2490
+Niger|4160|2092
+Jenisej|4092|2580
+Mackenzie (z Peace)|4045|1660
+Wołga|3700|1380
+Murray (z Darling)|3700|1072
+Jukon|3700|855

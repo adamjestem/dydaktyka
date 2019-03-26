@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Striping/Hover Highlighting a Table</title>
+<script type="text/javascript"  src="jquery-1.4.2.js"></script>
+<script type="text/javascript">
+    $(function() {
+    });
+</script>
+<style type="text/css">
+
+th,td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000000;
+}
+tr {
+	border: 1px solid gray;
+}
+td {
+	width:200px;
+	padding:3px;
+}
+th {
+	background-color:#D2E0E8;
+	color:#003366
+}
+table {
+    border: 1pt solid gray;
+}
+.clickable {
+	cursor:pointer;
+}
+.stripe1 {
+    background-color:#0f0;
+}
+.stripe2 {
+    background-color:#afa;
+}
+.highlight {
+    background-color: #ffcc00;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+<h1>Using jQuery to stripe and hover-highlight a table</h1>
+<table id="theList">
+	<thead>
+	<tr>
+      <th>Item</th>
+      <th>Price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+      <td>Milk</td>
+      <td>1.99</td>
+  </tr>
+  <tr>
+      <td>Eggs</td>
+      <td>2.29</td>
+  </tr>
+  <tr>
+      <td>Butter</td>
+      <td>3.49</td>
+  </tr>
+  <tr>
+      <td>Bread</td>
+      <td>0.99</td>
+  </tr>
+  <tr>
+      <td>Pasta</td>
+      <td>1.19</td>
+  </tr>
+  <tr>
+      <td>Honey</td>
+      <td>4.39</td>
+  </tr>
+  <tr>
+      <td>Cookies</td>
+      <td>2.99</td>
+  </tr>
+  <tr>
+      <td>Apples</td>
+      <td>0.59</td>
+  </tr>
+  <tr>
+      <td>Sugar</td>
+      <td>1.78</td>
+  </tr>
+  <tr>
+      <td>Pepper</td>
+      <td>1.56</td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Animating an Element</title>
+    <script type="text/javascript"  src="jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#right").click(function() {
+                $("#theDiv").animate({ width: "500px" }, 1000);
+            });
+            $("#text").click(function() {
+                $("#theDiv").animate({ fontSize: "24pt" }, 1000);
+            });
+            $("#toggle").click(function() {
+                $("#theDiv").animate({ left: "500" }, 1000, "swing");
+            });
+        });
+    </script>
+    <style type="text/css">
+        div#theDiv {
+            position:relative;
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            padding: 20px;
+            background: cyan;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        p, span {
+            font-size: 16pt;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Animating an Element</p>
+    <div id="theDiv">Animate Me</div>
+    <button id="right">Grow Right</button>
+    <button id="text">Big Text</button>
+    <button id="toggle">Move Div</button>
+</body>
+</html>

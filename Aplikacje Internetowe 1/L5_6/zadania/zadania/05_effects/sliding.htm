@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Sliding an Element</title>
+    <script type="text/javascript"  src="jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#slideup").click(function() {
+                $("#theDiv").slideUp("normal");
+            });
+            $("#slidedown").click(function() {
+                $("#theDiv").slideDown("normal");
+            });
+            $("#toggle").click(function() {
+                $("#theDiv").slideToggle("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        div#theDiv {
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            padding: 20px;
+            background: blue;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        p, span {
+            font-size: 16pt;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Sliding an Element</p>
+    <div id="theDiv">
+    </div>
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="toggle">Toggle Slide</button>
+</body>
+</html>

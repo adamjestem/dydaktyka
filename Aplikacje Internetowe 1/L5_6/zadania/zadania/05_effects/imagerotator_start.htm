@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Image Rotator</title>
+    <script type="text/javascript" src="jquery-1.4.2.js"></script>
+    <script type="text/javascript">
+    </script>
+<style type="text/css">
+#photoShow {
+    height:400px;
+    width:400px;
+}
+#photoShow div {
+    position:absolute;
+    z-index: 0;
+}
+#photoShow div.previous {
+    z-index: 1;
+}
+#photoShow div.current {
+    z-index: 2;
+}
+</style>
+</head>
+<body>
+    <h1>
+        jQuery-based Image Rotator</h1>
+    <div id="photoShow">
+        <div class="current">
+            <img src="images/Grass.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+        </div>
+        <div>
+            <img src="images/Leaf.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+        </div>
+        <div>
+            <img src="images/Spring.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+        </div>
+        <div>
+            <img src="images/Water.jpg" alt="Photo Gallery" width="400" height="400" class="gallery" />
+        </div>
+    </div>
+</body>
+</html>
