@@ -247,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() { // wyswietlenie wiadomosci w watku interfejsu
-                    listMsgItems.clear(); //remove chat history
+                    listMsgItems.clear(); // wyczyszczenie historii rozmowy
                     listMsgItems.add(0, String.format("  Server opened! Waiting for clients..."));
                     listAdapter.notifyDataSetChanged();
                 }});
