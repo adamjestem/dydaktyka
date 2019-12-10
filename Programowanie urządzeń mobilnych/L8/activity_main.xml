@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/onBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="on"
+            android:text="Turn On" />
+
+        <Button
+            android:id="@+id/visibleBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="visible"
+            android:text="Get visible" />
+
+        <Button
+            android:id="@+id/offBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="off"
+            android:text="Turn off" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/listDevBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="list"
+        android:text="List devices" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/serverCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="server" />
+
+        <Button
+            android:id="@+id/openBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="openConnection"
+            android:text="Open" />
+
+        <Button
+            android:id="@+id/closeBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="closeConnection"
+            android:text="Close" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/messagePT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Message" />
+
+    <Button
+        android:id="@+id/sendBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendBtnClick"
+        android:text="send" />
+
+    <TextView
+        android:id="@+id/devTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paired devices:" />
+
+    <ListView
+        android:id="@+id/devMsgLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
